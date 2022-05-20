@@ -4,7 +4,7 @@ from itertools import product
 from scipy.ndimage import gaussian_filter
 from skimage import filters, transform, io
 from annoy import AnnoyIndex
-from disjoint_set import disjoint_set
+from sets import disjoint_set
 #findiing 10 neighbor of each pixel and adding them to similar set 
 def _preprocessing(img, sigma=0.3):
     return gaussian_filter(img, sigma)
